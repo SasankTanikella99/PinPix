@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+:root {
+  --red: #e60023;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* Auth Page Design */
+#auth-page {
+  width: 100%;
+  height: 100%;
+  background-color: #f5e8e8;
+  display: grid;
+  place-items: center;
+}
+#auth-page .form-page {
+  background-color: #fff;
+  padding: 2rem 4rem;
+  width: 450px;
+  border-radius: 30px;
+  margin: auto;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+#auth-page .form-page header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#auth-page .form-page header .pin-logo {
+  font-size: 3rem;
+  color: var(--red);
+}
+#auth-page .form-page header .heading {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #555555;
+}
+#auth-page .form-page header .sub-heading {
+  font-size: 15px;
+  font-weight: 500;
+  color: #555555;
+}
+#auth-page .form-page form.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0 2rem;
+}
+
+#auth-page .form-page form.auth-form .input-group {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#auth-page .form-page form.auth-form .input-group .ForgotPasswordLink,
+#auth-page .form-page form.auth-form .input-group label {
+  font-size: 14px;
+  margin-left: 5px;
+  color: #555555;
+}
+#auth-page .form-page form.auth-form .input-group input {
+  width: 100%;
+  /* margin-top: 5px; */
+  padding: 12px 15px;
+  border: none;
+  border: 2px solid #dadada;
+  border-radius: 10px;
+}
+#auth-page .form-page form.auth-form .input-group .auth-submit-btn {
+  background-color: var(--red);
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#auth-page .form-page .or-text {
+  font-size: 14px;
+  text-align: center;
+  font-weight: 600;
+  margin: 8px auto;
+  color: #555555;
+  /* background-color: red; */
+  /* width: 100%; */
+}
+#auth-page .form-page .auth-social-box {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+#auth-page .form-page .social-links i {
+  font-size: 2rem;
+  color: #555555;
+}
+
+#auth-page .form-page .page-para {
+  text-align: center;
+
+  font-size: 14px;
+}
+#auth-page .form-page .page-para > a {
+  color: #2c2c2c;
+  font-weight: 600;
+}
+
+#auth-page .form-page button.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  color: #2c2c2c;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.error{
+  font-weight: 500;
+  color: red;
+  text-transform: capitalize;
+  margin: 7px 0;
+  text-align: center;
+}

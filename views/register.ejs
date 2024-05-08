@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel = "stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    
+    <title>Login / Pinterest</title>
+  </head>
+  <body>
+    <div id="auth-page">
+      <div class="form-page">
+        <header>
+          <i class="ri-pinterest-fill pin-logo"></i>
+          <div class="heading">Create an account to see more</div>
+        </header>
+
+        <form action="/register" method="post" class="auth-form">
+          <div class="input-group">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Username"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="email">Full Name</label>
+            <input
+              type="text"
+              name="fullname"
+              id="fullname"
+              placeholder="fullname"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Create Password"
+              required
+            />
+            <a href="/forgot" class="ForgotPasswordLink"
+              >Forgot Password?</a
+            >
+          </div>
+          <div class="input-group">
+            <input type="submit" value="Register" class="auth-submit-btn" />
+          </div>
+        </form>
+
+        <p class="or-text">OR</p>
+
+        <div class="auth-social-box">
+          <a href="#Google" class="social-links"
+            ><i class="ri-google-fill google"style="color: #4285f4;"></i
+          ></a>
+          <a href="#FaceBook" class="social-links"
+            ><i class="ri-facebook-circle-fill facebook"  style="color: #1877F2;"></i
+          ></a>
+        </div>
+
+        <p class="page-para">
+          Already on Pinterest  <a href="/login" class="link">Login</a>
+      </p>
+      
+        <button class="close-btn">
+          <i class="ri-close-fill"></i>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
+
+</body>
+</html>

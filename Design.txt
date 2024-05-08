@@ -1,0 +1,34 @@
+Log - 1:
+    - Data Association: Connecting one model's data into another model's data using id.
+    - Example: if a user posts a post(picture) on instagram, the post is posted by that user. Post data and user data is closely related so they are connected by post.id will be with user and user.id will be with post.
+    - Creating two models with schema - User, Post
+
+Log - 2:
+    - creating routes to create user and posts, and getting allposts posted by the user.
+    - used populate('type'), for converting the id into data.
+
+Log :
+    - Models required in Pinterest
+        - User, Pin, Board, Comment, Like
+    - Authentication and Authorization using passport
+    - installing passport, passport-local, passport-local-mongoose
+    - passport requires a strategy for authentication. - (Google Auth, Facebook Auth, local)
+    - we are using local strategy because we are going with username and password.
+    - /register, /login, /logout - user can register, login, and logout
+    - passport localstrategy- register method takes userData and password as input parameters and returns a promise that if isAuthenticated it redirects to the page we wanted it to redirect (/profile, /home), if not it redirects to the same page due to authentication failure
+    - login post route requires, the route and authenticate method from passport which itself takes the current strategy and an object that has successRedirect and failureRedirect keys as input parameters and values would be as the names suggest, if login is successful - (/home, /profile), if failed - redirect to /login.
+    - a middleware function for passport login is required as protection, if the request from client - authentication is successful -> next() else redirect to the same page.
+    - logout method - if error return the error or else redirect to same page. (Error handling)
+
+
+Log - 3:
+    - installing flash messages via package: connect-flash. Flash messages display when there is an error.
+    - activating flash messages via app.use(flash()). flash package has an "ARRAY" called error. Using response.render(req.flash('error')), we are rendering the error message when a request has an error.
+    - error is an array, how do we display? -> in the ejs file, if the error.length > 0 , display the error.
+    - when a user goes to login page, then there will be a blank error array - no error. When you are redirected to the same page because you entered wrong credentials then it is an error, and it is stored in error array.
+
+Log - 4:
+    - installing multer to upload files
+    - use the multer documentation for snippets of ejs, /upload
+    - using bootstrap card div, uploaded images are displayed as cards
+    - as soon as an image is uploaded, it was rendering "done" before in the post route - /upload. Now, it redirects to /profile.
